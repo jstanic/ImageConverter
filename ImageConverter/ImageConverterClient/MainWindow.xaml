@@ -1,0 +1,17 @@
+﻿<Window x:Class="ImageConverterClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ImageConverterClient"
+        mc:Ignorable="d"
+        Title="Image converter" Height="531.818" Width="399.858" Loaded="Window_Loaded">
+    <Grid>
+        <Button x:Name="btnSelectImages" Content="Select images" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="120" Click="btnSelectImages_Click"/>
+        <Button x:Name="btnConvertImages" Content="Convert images" HorizontalAlignment="Left" Margin="256,470,0,0" VerticalAlignment="Top" Width="120" Click="btnConvertImages_Click"/>
+        <DataGrid x:Name="grdLoadedFiles" HorizontalAlignment="Left" Height="344" Margin="10,66,0,0" VerticalAlignment="Top" Width="366" IsReadOnly="True"/>
+        <TextBox x:Name="txtFileName" HorizontalAlignment="Left" Height="23" Margin="10,470,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="229"/>
+        <Label x:Name="lblFileName" Content="Converted file name:" HorizontalAlignment="Left" Margin="10,427,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.246,0.985"/>
+
+    </Grid>
+</Window>
